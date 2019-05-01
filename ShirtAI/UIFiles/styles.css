@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: darkgray;
+}
+
+.container-cover {
+    margin: 0;
+    padding: 0;
+}
+
+.shirtside {
+    display: flex;
+    height: 100%;
+    width: auto;
+    margin-left: -10px;
+    margin-top: -10px;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    padding: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+.labelcontainer {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 30px;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.item {
+    background-color: gray;
+}
+
+.shirtdisplay {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    width: 25.0%;
+    height: 500px;
+    margin: 0 auto;
+    right: 700px;
+    top: 200px;
+    border-radius: 5px;
+    background-color: white;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.imgshirt {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    align-self: center;
+}
+
+.imagebutton {
+    margin: 25px auto;
+    font-size: 15px;
+    border-color: transparent;
+    background-color: lightgray;
+}
+
+.imagebutton:hover {
+    background-color: white;
+}
+
+#imageContainerTest {
+    background-color: white;
+    width: 0;
+    height: 0;
+    z-index: 1;
+}
+
+@media only screen and (min-width: 200px) {
+    .shirtside {
+        display: flex;
+        height: 100%;
+        width: 50%;
+        float: left;
+        align-content: center;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .box {
+        width: 40%;
+        height: 100px;
+        text-align: center;
+        justify-content: flex-start;
+        border: 1px solid black;
+    }
+
+    .labelcontainer {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .shirtside {
+        top: 100px;
+        display: flex;
+        height: 100%;
+        width: auto;
+        position: absolute;
+        float: left;
+        align-content: center;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .box {
+        width: 200px;
+        height: 100px;
+        text-align: center;
+        justify-content: flex-start;
+        border: 1px solid black;
+    }
+
+    .labelcontainer {
+        font-size: 15px;
+    }
+}
